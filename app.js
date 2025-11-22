@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const morgan = require('morgan');
-
+const userModel=require('./models/user');
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
